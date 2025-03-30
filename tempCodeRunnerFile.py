@@ -1,9 +1,3 @@
-from kivy.app import App
-from kivy.uix.label import Label
 
-class MyApp(App):
-    def build(self):
-        return Label(text="choose the game")
-
-
-MyApp().run()
+from kivy.uix.screenmanager import ScreenManager, Screen
+from kivy.lang import Builder

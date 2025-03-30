@@ -1,12 +1,58 @@
 <Container>:
     orientation: 'vertical'
-    padding: 200
+    padding: [self.width * 0.1, self.height * 0.1]
+    spacing: self.height * 0.05
+
+    canvas.before:
+        Rectangle:
+            source: 'background.jpg'  # путь к изображению
+            pos: self.pos
+            size: self.size
 
     Button:
         text: 'ИГРАТЬ'
+        font_size: '24sp'
+        font_name: 'Minecraft.ttf'
+        size_hint: (1, None)
+        height: '60dp'
+        background_normal: ''
+        background_color: (0.2, 0.2, 0.2, 0.9)
+        color: (1, 1, 1, 1)
+        canvas.before:
+            Color:
+                rgba: 0, 0, 0, 1
+            Line:
+                width: 2
+                rectangle: (self.x, self.y, self.width, self.height)
 
     Button:
         text: 'НАСТРОЙКИ'
+        font_size: '24sp'
+        font_name: 'Minecraft.ttf'
+        size_hint: (1, None)
+        height: '60dp'
+        background_normal: ''
+        background_color: (0.2, 0.2, 0.2, 0.9)
+        color: (1, 1, 1, 1)
+        canvas.before:
+            Color:
+                rgba: 0, 0, 0, 1
+            Line:
+                width: 2
+                rectangle: (self.x, self.y, self.width, self.height)
 
     Button:
         text: 'ВЫХОД'
+        font_size: '24sp'
+        font_name: 'Minecraft.ttf'
+        size_hint: (1, None)
+        height: '60dp'
+        background_normal: ''
+        background_color: (0.2, 0.2, 0.2, 0.9)
+        color: (1, 1, 1, 1)
+        canvas.before:
+            Color:
+                rgba: 0, 0, 0, 1
+            Line:
+                width: 2
+                rectangle: (self.x, self.y, self.width, self.height)
